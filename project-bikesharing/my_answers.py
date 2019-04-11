@@ -140,7 +140,8 @@ class NeuralNetwork(object):
 #########################################################
 # Set your hyperparameters here
 ##########################################################
-iterations = 1750
+iterations = 1900
 learning_rate = 1.4
-hidden_nodes = 4
+# 4 nodes was not enough to hit the req, 5 was borderline. 6 consistently exceeds the req.
+hidden_nodes = 6
 output_nodes = 1
